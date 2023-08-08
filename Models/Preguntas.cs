@@ -1,4 +1,5 @@
-public class Preguntas{
+public class Preguntas
+{
     public int idpregunta {get;}
     public int idcategoria {get;}
     public int iddificultad {get;}
