@@ -28,4 +28,15 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+    public IActionResult ConfigurarJuego()
+    {
+        Juego.InicializarJuego();
+        return View();
+    }
+    public IActionResult Comenzar(string _nombre, int dificultad, int categoria)
+    {
+        Juego.CargarPartida(nombre, dificultad, categoria);
+        
+    }
+
 }
