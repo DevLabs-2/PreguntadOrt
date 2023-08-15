@@ -20,3 +20,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+.index {
+  background-image: url("../imgs/bgindex.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1920px;
+  height: 1080px;
+ }

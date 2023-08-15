@@ -39,24 +39,24 @@ public static class BD
         {
             using (SqlConnection db = new SqlConnection(ConnectionString))
             {
-                string sql = "SELECT * FROM Preguntas WHERE idcategoria = '@categoria'";
-                ListaPreguntas = db.Query<Preguntas>(sql, new {categoria = categoria}).ToList();
+                string sql = "SELECT * FROM Preguntas WHERE idcategoria = '@pcategoria'";
+                ListaPreguntas = db.Query<Preguntas>(sql, new {pcategoria = categoria}).ToList();
             }
         }
         else if (dificultad != -1 && categoria == -1)
         {
             using (SqlConnection db = new SqlConnection(ConnectionString))
             {
-                string sql = "SELECT * FROM Preguntas WHERE iddificultad = '@dificultad'";
-                ListaPreguntas = db.Query<Preguntas>(sql, new {dificultad = dificultad}).ToList();
+                string sql = "SELECT * FROM Preguntas WHERE iddificultad = '@pdificultad'";
+                ListaPreguntas = db.Query<Preguntas>(sql, new {pdificultad = dificultad}).ToList();
             }
         }
         else
         {
             using (SqlConnection db = new SqlConnection(ConnectionString))
             {
-                string sql = "SELECT * FROM Preguntas WHERE iddificultad = '@dificultad' AND  idcategoria = '@categoria'";
-                ListaPreguntas = db.Query<Preguntas>(sql,  new {categoria = categoria}, new {dificultad = dificultad}).ToList();
+                string sql = "SELECT * FROM Preguntas WHERE iddificultad = '@pdificultad' AND  idcategoria = '@pcategoria'";
+                ListaPreguntas = db.Query<Preguntas>(sql,  new {pcategoria = categoria, pdificultad = dificultad}).ToList();
             }
         }
         return ListaPreguntas;
@@ -68,8 +68,8 @@ public static class BD
         {
             using (SqlConnection db = new SqlConnection(ConnectionString))
             {
-                string sql = "SELECT * FROM Respuestas WHERE idpregunta = '@idpregunta'";
-                ListaRespuestas.AddRange(db.Query<Respuestas>(sql, new {idpregunta = pregunta.idpregunta}).ToList());
+                string sql = "SELECT * FROM Respuestas WHERE idpregunta = '@pidpregunta'";
+                ListaRespuestas.AddRange(db.Query<Respuestas>(sql, new {pidpregunta = pregunta.idpregunta}).ToList());
             }
         }
         return ListaRespuestas;
