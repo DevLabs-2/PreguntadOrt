@@ -1,9 +1,9 @@
 using System.Data.SqlClient;
 using Dapper;
 
-public static class DB
+public static class BD
 {
-    private static string ConnectionString { get; set; } = @"Server=A-PHZ2-CIDI-029;DataBase=Preguntados;Trusted_Connection=True;";
+    private static string ConnectionString = @"Server=localhost;DataBase=Preguntados;Trusted_Connection=True;";
     public static List<Categorias> ObtenerCategorias()
     {
         List<Categorias> ListaCategorias = new List<Categorias>();
@@ -24,7 +24,7 @@ public static class DB
         }
         return ListaDificultades;
     }
-    static List<Preguntas> ObtenerPreguntas(int dificultad, int categoria)
+    public static List<Preguntas> ObtenerPreguntas(int dificultad, int categoria)
     {
         List<Preguntas> ListaPreguntas = new List<Preguntas>();
         if (dificultad == -1 && categoria == -1)
@@ -56,12 +56,12 @@ public static class DB
             using (SqlConnection db = new SqlConnection(ConnectionString))
             {
                 string sql = "SELECT * FROM Preguntas WHERE iddificultad = '@dificultad' AND  idcategoria = '@categoria'";
-                ListaPreguntas = db.Query<Preguntas>(sql, new {dificultad = dificultad}, new {categoria = categoria}).ToList();
+                ListaPreguntas = db.Query<Preguntas>(sql,  new {categoria = categoria}, new {dificultad = dificultad}).ToList();
             }
         }
         return ListaPreguntas;
     }
-    static List<Respuestas> ObtenerRespuestas(List<Preguntas> ListaPreguntas)
+    public static List<Respuestas> ObtenerRespuestas(List<Preguntas> ListaPreguntas)
     {
         List<Respuestas> ListaRespuestas = new List<Respuestas>();
         foreach (Preguntas pregunta in ListaPreguntas)
@@ -69,7 +69,7 @@ public static class DB
             using (SqlConnection db = new SqlConnection(ConnectionString))
             {
                 string sql = "SELECT * FROM Respuestas WHERE idpregunta = '@idpregunta'";
-                ListaRespuestas.AddRange(db.Query<Respuestas>(sql, new {idpregunta = pregunta.idpregunta}).ToList();)
+                ListaRespuestas.AddRange(db.Query<Respuestas>(sql, new {idpregunta = pregunta.idpregunta}).ToList());
             }
         }
         return ListaRespuestas;

@@ -1,18 +1,18 @@
 public static class Juego
 {
-    private string _nombre;
-    private int _puntajeActual;
-    private int _cantPreguntasCorrectas;
-    private List<Preguntas> _preguntas;
-    private List<Respuestas> _respuestas;
-    private int i;
+    static private string _nombre;
+    static private int _puntajeActual;
+    static private int _cantPreguntasCorrectas;
+    static private List<Preguntas> _preguntas;
+    static private List<Respuestas> _respuestas;
+    static private int i;
  
     public static void InicializarJuego()
     {
         i = 0;
         _nombre = "";
         _puntajeActual = 0;
-        cantPreguntasCorrectas = 0;
+        _cantPreguntasCorrectas = 0;
         _preguntas = new List<Preguntas>();
         _respuestas = new List<Respuestas>();
     }
@@ -29,6 +29,10 @@ public static class Juego
         _preguntas = Randomizer(BD.ObtenerPreguntas(dificultad, categoria));
         _respuestas = BD.ObtenerRespuestas(_preguntas);
     }
+    public static bool HayMasPreguntas()
+    {
+        return i <= _preguntas.Count;
+    }
     public static Preguntas ObtenerProximaPregunta()
     {
         return _preguntas[i];
@@ -36,53 +40,56 @@ public static class Juego
     }
     public static List<Preguntas> Randomizer(List<Preguntas> Lista)
     {
-        int n = Lista.Count;  
+        int n = Lista.Count;
+        Random rnd = new Random();
         while (n > 1) {  
             n--;
-            int k = rng.Next(n + 1);
+            int k = rnd.Next(n + 1);
             Preguntas pregunta = Lista[k];
             Lista[k] = Lista[n];
             Lista[n] = pregunta;
         } 
+        return Lista;
     }
     public static List<Respuestas> ObtenerProximasRespuestas(int idPregunta)
     {
-        new List<Respuestas>() ListaCorrectas;
+        List <Respuestas> ListaCorrectas = new List<Respuestas>();
         foreach(Respuestas respuesta in _respuestas)
         {
-            if(respuesta.idPregunta == idPregunta)
+            if(respuesta.idpregunta == idPregunta)
             {
-                ListaCorrectas.AddRange(respuesta);
+
+                ListaCorrectas.Add(respuesta);
             }
         }
         return ListaCorrectas;
     }
     public static bool ValidarRespuesta(int idPregunta, int idRespuesta)
     {
-        Preguntas pregunta == new Preguntas;
+        Preguntas pregunta = new Preguntas();
         foreach(Preguntas preg in _preguntas)
         {
-            if(preg.idPregunta == idPregunta) pregunta = preg;
+            if(preg.idpregunta == idPregunta) pregunta = preg;
         }
-        EliminarPregunta(preg.idPregunta);
-        Respuestas respuesta == new Respuestas;
+        EliminarPregunta(pregunta.idpregunta);
+        Respuestas respuesta = new Respuestas();
         foreach(Respuestas res in _respuestas)
         {
-            if(res.idRespuesta == idRespuesta) respuesta = res;
+            if(res.idrespuesta == idRespuesta) respuesta = res;
         }
-        if(res.correcta)
+        if(respuesta.correcta)
         {
             _puntajeActual += 100;
             _cantPreguntasCorrectas++;
         }
-        return res.correcta;
+        return respuesta.correcta;
     }
     public static void EliminarPregunta(int idPregunta)
     {
         int i = 0;
         foreach(Preguntas preg in _preguntas)
         {
-            if(preg.idPregunta == idPregunta) _preguntas.Remove(i);
+            if(preg.idpregunta == idPregunta) _preguntas.RemoveAt(i);
             i++;
         }
     }
