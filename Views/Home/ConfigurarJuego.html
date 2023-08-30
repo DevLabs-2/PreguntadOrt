@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/wwwroot/css/site.css">
+    <title>PreguntadOrt - Configuración</title>
+</head>
+<body class="config">
+    <a href="index.html"><img src="/wwwroot/imgs/cruz.png" alt="salir" class="tlicon"></a>
+    <form action="index.html" class="form_sparound">
+        <div class="container">
+            <h1 class="subtitle">Nombre de Usuario</h1>
+            <input type="text" placeholder="Nombre" required>
+        </div>
+        <div class="container">
+            <h1 class="subtitle">Categorías</h1>
+            <div class="line">
+                <input type="radio" name="cat" id="Arte" value="1" required>
+                <label for="Arte">Arte</label>
+                <input type="radio" name="cat" id="Deporte" value="2">
+                <label for="Deporte">Deporte</label>
+                <input type="radio" name="cat" id="Geografia" value="3">
+                <label for="Geografia">Geografia</label>
+            </div>
+            <div class="line">
+                <input type="radio" name="cat" id="Historia" value="4">
+                <label for="Historia">Historia</label>
+                <input type="radio" name="cat" id="Ciencia" value="5">
+                <label for="Ciencia">Ciencia</label>
+                <input type="radio" name="cat" id="Entretenimiento" value="6">
+                <label for="Entretenimiento">Entretenimiento</label>
+            </div>
+            <div class="line">
+                <input type="radio" name="cat" id="Todas" value="-1">
+                <label for="Todas">Todas</label>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="subtitle">Dificultad</h1>
+            <div class="line">
+                <input type="radio" name="dif" id="Facil" value="1">
+                <label for="Facil">Facil</label>
+                <input type="radio" name="dif" id="Medio" value="2">
+                <label for="Medio">Medio</label>
+                <input type="radio" name="dif" id="Dificil" value="3">
+                <label for="Dificil">Dificil</label><br>
+            </div>
+            <div class="line">
+                <input type="radio" name="dif" id="Todas" value="-1">
+                <label for="Todas">Todas</label><br>
+            </div>
+            </div>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

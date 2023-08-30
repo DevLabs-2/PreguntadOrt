@@ -12,18 +12,255 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+ @font-face {
+  font-family: 'Monster';
+  src: url("../fonts/Melted Monster.ttf");
+}
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url("../fonts/RedHatText.ttf");
+}
+body{
+  overflow: hidden;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, p{
+  font-family: 'Red Hat Text';
+}
+.title{
+  font-family: 'Monster';
+  font-size: 6rem;
+}
+.width100{
+  width: 100%;
+}
+.subtitle{
+  font-family: 'Red Hat Text';
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+.form_center{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_sparound{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo_s{
+  width: 15%;
+}
+.tlicon{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+/*INDEX*/
+.index{
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/bgindex.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.content{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  background:rgba(0, 0, 0, 0.3);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+  border-radius: 10rem;
+  font-family: "Red Hat Text";
+}
+.content:hover{
+  opacity: 2;
+  text-decoration: none;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  margin-top: -10px;
+}
+.menu li{
+  text-decoration: none;
+  font-family: 'Red Hat Text';
+  font-weight: 700;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: -2.5rem;
+  border: 2px black solid;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
 }
 
-body {
-  margin-bottom: 60px;
-}
-.index {
+/*Config*/
+.config{
   background-image: url("../imgs/bgindex.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 1920px;
+  width: 100%;
   height: 1080px;
- }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tooltiptext{
+  color: aqua;
+}
+label{
+  font-family: 'Red Hat Text';
+  color: rgb(255, 255, 255);
+}
+
+/* Pantalla de juego */
+.juego{
+  background-image: url("../imgs/bgindex.jpg");
+  background-position-y: 50%;
+  width: 100%;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#enunciado{
+  font-size: 4rem;
+}
+.puntos{
+  width: 15%;
+  position: absolute;
+  right: 85%;
+  top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.boxpuntos{
+  padding-inline: 1.2rem;
+  background-color: rgba(255, 179, 39, 0.74);
+  border: 3px orange solid;
+}
+.column
+{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.respuestas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 20%;
+  width: 40%;
+  margin: 0;
+}
+.lineres{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.res{
+  width: 8rem;
+  height: 3rem;
+  border-radius: 1rem;
+  font-family: 'Red Hat Text';
+  font-weight: 500;
+  font-size: larger;
+}
+
+.imgpregunta{
+  width: 30%;
+  border-radius: 20%;
+}
+/* Crear Pregunta */
+.crear{
+  background-image: url("../imgs/bgindex.jpg");
+  background-position-x: 50%;
+  height: 1080px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.crear form{
+  width: 100%;
+}
+
+.resptext{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 15%;
+  width: 40%;
+  margin: 0;
+}
+.inputenunciado{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+}
+
+/* Creditos */
+
+.creditos{
+  background-image: url("../imgs/bgindex.jpg");
+  background-position-x: 40%;
+  background-position-y: 35%;
+  height: 100%;
+  width: 100%;
+}
+.card{
+  border-radius: 100%;
+  
+}
