@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreguntadOrt</title>
+</head>
+<body class="juego">
+    <div class="puntos">
+        <h2 class="subtitle">@ViewBag.nombre</h2>
+  
+        <div class="boxpuntos"><h2>@ViewBag.puntos</h2></div>
+    </div>
+    <div class="column">
+        <h1 class="subtitle" id="enunciado">Que color es?</h1>
+        <img src="imgs/amarillo.png" alt="Pregunta" class="imgpregunta">
+        <form action='@Url.Action("VerificarRespuesta")' class="respuestas">
+            <input type="hidden" name="idpregunta" value="@ViewBag.pregunta.idPregunta">
+            <div class="lineres">
+                <button type="radio" value="@ViewBag.respuesta[0].idRespuesta" class="res" name="idRespuesta" id="res1">@ViewBag.respuesta[0].contenido</button>
+                <button type="radio" value="@ViewBag.respuesta[1].idRespuesta" class="res" name="idRespuesta" id="res2">@ViewBag.respuesta[1].contenido</button>
+
+            </div>
+            <div class="lineres">
+                <button type="radio" value="@ViewBag.respuesta[2].idRespuesta" class="res" name="idRespuesta" id="res3">@ViewBag.respuesta[2].contenido</button>
+                <button type="radio" value="@ViewBag.respuesta[3].idRespuesta" class="res" name="idRespuesta" id="res4">@ViewBag.respuesta[3].contenido</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Programación\\Preguntados\\Preguntados.csproj": {}
+    "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\Preguntados.csproj": {}
   },
   "projects": {
-    "Z:\\Programación\\Preguntados\\Preguntados.csproj": {
+    "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\Preguntados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Programación\\Preguntados\\Preguntados.csproj",
+        "projectUniqueName": "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\Preguntados.csproj",
         "projectName": "Preguntados",
-        "projectPath": "Z:\\Programación\\Preguntados\\Preguntados.csproj",
-        "packagesPath": "C:\\Users\\47392040\\.nuget\\packages\\",
-        "outputPath": "Z:\\Programación\\Preguntados\\obj\\",
+        "projectPath": "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\Preguntados.csproj",
+        "packagesPath": "C:\\Users\\95596083\\.nuget\\packages\\",
+        "outputPath": "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47392040\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95596083\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,7 +46,7 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.143, )"
+              "version": "[2.0.151, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

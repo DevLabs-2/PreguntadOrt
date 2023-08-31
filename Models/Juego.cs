@@ -26,12 +26,13 @@ public static class Juego
     }
     public static void CargarPartida(string nombre, int dificultad, int categoria)
     {
+        _nombre = nombre;
         _preguntas = Randomizer(BD.ObtenerPreguntas(dificultad, categoria));
         _respuestas = BD.ObtenerRespuestas(_preguntas);
     }
     public static bool HayMasPreguntas()
     {
-        return i <= _preguntas.Count;
+        return i < _preguntas.Count && i < 10;
     }
     public static Preguntas ObtenerProximaPregunta()
     {
@@ -92,5 +93,13 @@ public static class Juego
             if(preg.idpregunta == idPregunta) _preguntas.RemoveAt(i);
             i++;
         }
+    }
+    public static string ObtenerUsername()
+    {
+        return _nombre;
+    }
+    public static int ObtenerPuntaje()
+    {
+        return _puntajeActual;
     }
 }

@@ -33,18 +33,21 @@ public class HomeController : Controller
         Juego.InicializarJuego();
         return View();
     }
+    
     public IActionResult Comenzar(string nombre, int dificultad, int categoria)
     {
         Juego.CargarPartida(nombre, dificultad, categoria);
-        if(nombre == null || dificultad == null || categoria == null) return RedirectToAction("jugar");
-        else return RedirectToAction("ConfigurarJuego");
+        if(nombre == null || dificultad == null || categoria == null) return RedirectToAction("ConfigurarJuego");
+        else return RedirectToAction("Jugar");
     }
-    public IActionResult Jugar()
+    public IActionResult Jugar(string nombre)
     {
         if(Juego.HayMasPreguntas()) 
         {
             ViewBag.pregunta = Juego.ObtenerProximaPregunta();
             ViewBag.respuesta = Juego.ObtenerProximasRespuestas(ViewBag.pregunta.idPregunta);
+            ViewBag.nombre = Juego.ObtenerUsername();
+            ViewBag.puntos = Juego.ObtenerPuntaje();
             return View();
         }
         else return RedirectToAction("Fin");
@@ -58,10 +61,4 @@ public class HomeController : Controller
     {
         return View();
     }
-    public IActionResult Respuesta(bool correcta)
-    {
-        ViewBag.correcta = correcta;
-        return View();
-    }
-
 }
