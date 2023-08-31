@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Preguntados
 build_property.RootNamespace = Preguntados
-build_property.ProjectDir = Z:\2023\Prog\Preguntados\PreguntadOrt\
+build_property.ProjectDir = Z:\DevLabs 2 ORG\PreguntadOrt\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = Z:\2023\Prog\Preguntados\PreguntadOrt
+build_property.MSBuildProjectDirectory = Z:\DevLabs 2 ORG\PreguntadOrt
 build_property._RazorSourceGeneratorDebug = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Home/ConfigurarJuego.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Home/ConfigurarJuego.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb25maWd1cmFySnVlZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Home/CrearPregunta.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Home/CrearPregunta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhclByZWd1bnRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Home/Creditos.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Home/Creditos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Home/Index.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Home/Jugar.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Home/Jugar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxKdWdhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Shared/Error.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Shared/_ValidationScriptsPartial.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/_ViewImports.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/_ViewStart.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[Z:/2023/Prog/Preguntados/PreguntadOrt/Views/Shared/_Layout.cshtml]
+[Z:/DevLabs 2 ORG/PreguntadOrt/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8fs8fw4mii

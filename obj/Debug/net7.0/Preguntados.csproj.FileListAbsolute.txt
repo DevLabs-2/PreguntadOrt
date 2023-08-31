@@ -76,3 +76,42 @@ Z:\2023\Prog\Preguntados\PreguntadOrt\obj\Debug\net7.0\refint\Preguntados.dll
 Z:\2023\Prog\Preguntados\PreguntadOrt\obj\Debug\net7.0\Preguntados.pdb
 Z:\2023\Prog\Preguntados\PreguntadOrt\obj\Debug\net7.0\Preguntados.genruntimeconfig.cache
 Z:\2023\Prog\Preguntados\PreguntadOrt\obj\Debug\net7.0\ref\Preguntados.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\appsettings.Development.json
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\appsettings.json
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Preguntados.staticwebassets.runtime.json
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Preguntados.exe
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Preguntados.deps.json
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Preguntados.runtimeconfig.json
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Preguntados.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Preguntados.pdb
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\Dapper.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\System.Data.SqlClient.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.csproj.AssemblyReference.cache
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.GeneratedMSBuildEditorConfig.editorconfig
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.AssemblyInfoInputs.cache
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.AssemblyInfo.cs
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.csproj.CoreCompileInputs.cache
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.MvcApplicationPartsAssemblyInfo.cache
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.RazorAssemblyInfo.cache
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.RazorAssemblyInfo.cs
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets\msbuild.Preguntados.Microsoft.AspNetCore.StaticWebAssets.props
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets\msbuild.build.Preguntados.props
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Preguntados.props
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Preguntados.props
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets.pack.json
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets.build.json
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\staticwebassets.development.json
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\scopedcss\bundle\Preguntados.styles.css
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\scopedcss\projectbundle\Preguntados.bundle.scp.css
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.csproj.CopyComplete
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\refint\Preguntados.dll
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.pdb
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\Preguntados.genruntimeconfig.cache
+Z:\DevLabs 2 ORG\PreguntadOrt\obj\Debug\net7.0\ref\Preguntados.dll

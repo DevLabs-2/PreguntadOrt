@@ -502,23 +502,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\95596083\\.nuget\\packages\\": {},
+    "C:\\Users\\47392040\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\Preguntados.csproj",
+      "projectUniqueName": "Z:\\DevLabs 2 ORG\\PreguntadOrt\\Preguntados.csproj",
       "projectName": "Preguntados",
-      "projectPath": "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\Preguntados.csproj",
-      "packagesPath": "C:\\Users\\95596083\\.nuget\\packages\\",
-      "outputPath": "Z:\\2023\\Prog\\Preguntados\\PreguntadOrt\\obj\\",
+      "projectPath": "Z:\\DevLabs 2 ORG\\PreguntadOrt\\Preguntados.csproj",
+      "packagesPath": "C:\\Users\\47392040\\.nuget\\packages\\",
+      "outputPath": "Z:\\DevLabs 2 ORG\\PreguntadOrt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\95596083\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\47392040\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
