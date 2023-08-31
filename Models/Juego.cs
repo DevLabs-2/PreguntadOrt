@@ -3,6 +3,7 @@ public static class Juego
     static private string _nombre;
     static private int _puntajeActual;
     static private int _cantPreguntasCorrectas;
+    static private int _cantPreguntasRespondidas;
     static private List<Preguntas> _preguntas;
     static private List<Respuestas> _respuestas;
     static private int i;
@@ -52,12 +53,12 @@ public static class Juego
         } 
         return Lista;
     }
-    public static List<Respuestas> ObtenerProximasRespuestas(int idPregunta)
+    public static List<Respuestas> ObtenerProximasRespuestas(int idpregunta)
     {
         List <Respuestas> ListaCorrectas = new List<Respuestas>();
         foreach(Respuestas respuesta in _respuestas)
         {
-            if(respuesta.idpregunta == idPregunta)
+            if(respuesta.idpregunta == idpregunta)
             {
 
                 ListaCorrectas.Add(respuesta);
@@ -65,32 +66,33 @@ public static class Juego
         }
         return ListaCorrectas;
     }
-    public static bool ValidarRespuesta(int idPregunta, int idRespuesta)
+    public static bool ValidarRespuesta(int idpregunta, int idrespuesta)
     {
         Preguntas pregunta = new Preguntas();
         foreach(Preguntas preg in _preguntas)
         {
-            if(preg.idpregunta == idPregunta) pregunta = preg;
+            if(preg.idpregunta == idpregunta) pregunta = preg;
         }
         EliminarPregunta(pregunta.idpregunta);
         Respuestas respuesta = new Respuestas();
         foreach(Respuestas res in _respuestas)
         {
-            if(res.idrespuesta == idRespuesta) respuesta = res;
+            if(res.idrespuesta == idrespuesta) respuesta = res;
         }
         if(respuesta.correcta)
         {
             _puntajeActual += 100;
             _cantPreguntasCorrectas++;
         }
+        _cantPreguntasRespondidas++;
         return respuesta.correcta;
     }
-    public static void EliminarPregunta(int idPregunta)
+    public static void EliminarPregunta(int idpregunta)
     {
         int i = 0;
         foreach(Preguntas preg in _preguntas)
         {
-            if(preg.idpregunta == idPregunta) _preguntas.RemoveAt(i);
+            if(preg.idpregunta == idpregunta) _preguntas.RemoveAt(i);
             i++;
         }
     }
@@ -101,5 +103,10 @@ public static class Juego
     public static int ObtenerPuntaje()
     {
         return _puntajeActual;
+    }
+
+    public static int ObtenerPorcentaje()
+    {
+        return _cantPreguntasCorrectas / _cantPreguntasRespondidas * 100;
     }
 }

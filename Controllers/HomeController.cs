@@ -45,20 +45,21 @@ public class HomeController : Controller
         if(Juego.HayMasPreguntas()) 
         {
             ViewBag.pregunta = Juego.ObtenerProximaPregunta();
-            ViewBag.respuesta = Juego.ObtenerProximasRespuestas(ViewBag.pregunta.idPregunta);
+            ViewBag.respuesta = Juego.ObtenerProximasRespuestas(ViewBag.pregunta.idpregunta);
             ViewBag.nombre = Juego.ObtenerUsername();
             ViewBag.puntos = Juego.ObtenerPuntaje();
             return View();
         }
         else return RedirectToAction("Fin");
     }
-    [HttpPost] public IActionResult VerificarRespuesta(int idPregunta, int idRespuesta)
+    [HttpPost] public IActionResult VerificarRespuesta(int idpregunta, int idrespuesta)
     {
-        ViewBag.correcta = Juego.ValidarRespuesta(idPregunta,idRespuesta);
+        ViewBag.correcta = Juego.ValidarRespuesta(idpregunta,idrespuesta);
         return RedirectToAction("Respuesta");
     }
     public IActionResult Fin()
     {
+        ViewBag.porcentaje = Juego.ObtenerPorcentaje();
         return View();
     }
 }
