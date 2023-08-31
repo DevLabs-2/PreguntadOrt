@@ -10,7 +10,7 @@ public static class Juego
  
     public static void InicializarJuego()
     {
-        i = 0;
+        i = -1;
         _nombre = "";
         _puntajeActual = 0;
         _cantPreguntasCorrectas = 0;
@@ -33,12 +33,12 @@ public static class Juego
     }
     public static bool HayMasPreguntas()
     {
-        return i < _preguntas.Count && i < 10;
+        return i < _preguntas.Count && i < 9;
     }
     public static Preguntas ObtenerProximaPregunta()
-    {
-        return _preguntas[i];
+    {   
         i++;
+        return _preguntas[i];
     }
     public static List<Preguntas> Randomizer(List<Preguntas> Lista)
     {
@@ -73,7 +73,6 @@ public static class Juego
         {
             if(preg.idpregunta == idpregunta) pregunta = preg;
         }
-        EliminarPregunta(pregunta.idpregunta);
         Respuestas respuesta = new Respuestas();
         foreach(Respuestas res in _respuestas)
         {
@@ -87,15 +86,6 @@ public static class Juego
         _cantPreguntasRespondidas++;
         return respuesta.correcta;
     }
-    public static void EliminarPregunta(int idpregunta)
-    {
-        int i = 0;
-        foreach(Preguntas preg in _preguntas)
-        {
-            if(preg.idpregunta == idpregunta) _preguntas.RemoveAt(i);
-            i++;
-        }
-    }
     public static string ObtenerUsername()
     {
         return _nombre;
@@ -107,6 +97,9 @@ public static class Juego
 
     public static int ObtenerPorcentaje()
     {
-        return _cantPreguntasCorrectas / _cantPreguntasRespondidas * 100;
+        int n;
+        if(_cantPreguntasRespondidas != 0)n = (_cantPreguntasCorrectas / _cantPreguntasRespondidas * 100);
+        else n = 0;
+        return n;
     }
 }

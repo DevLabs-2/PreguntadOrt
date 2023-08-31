@@ -40,7 +40,7 @@ public class HomeController : Controller
         if(nombre == null || dificultad == null || categoria == null) return RedirectToAction("ConfigurarJuego");
         else return RedirectToAction("Jugar");
     }
-    public IActionResult Jugar(string nombre)
+    public IActionResult Jugar()
     {
         if(Juego.HayMasPreguntas()) 
         {
@@ -52,14 +52,22 @@ public class HomeController : Controller
         }
         else return RedirectToAction("Fin");
     }
-    [HttpPost] public IActionResult VerificarRespuesta(int idpregunta, int idrespuesta)
+    public IActionResult VerificarRespuesta(int idpregunta, int idrespuesta)
     {
         ViewBag.correcta = Juego.ValidarRespuesta(idpregunta,idrespuesta);
-        return RedirectToAction("Respuesta");
+        return RedirectToAction("Jugar");
     }
     public IActionResult Fin()
     {
         ViewBag.porcentaje = Juego.ObtenerPorcentaje();
+        return View();
+    }
+    public IActionResult Creditos()
+    {
+        return View();
+    }
+     public IActionResult CrearPregunta()
+    {
         return View();
     }
 }

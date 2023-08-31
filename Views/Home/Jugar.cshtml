@@ -13,18 +13,18 @@
         <div class="boxpuntos"><h2>@ViewBag.puntos</h2></div>
     </div>
     <div class="column">
-        <h1 class="subtitle" id="enunciado">Que color es?</h1>
-        <img src="imgs/amarillo.png" alt="Pregunta" class="imgpregunta">
+        <h1 class="subtitle" id="enunciado">@ViewBag.pregunta.enunciado</h1>
+        @if(ViewBag.pregunta.foto != null){<img src="/imgs/@ViewBag.pregunta.foto" alt="Pregunta" class="imgpregunta">}
         <form action='@Url.Action("VerificarRespuesta")' class="respuestas">
             <input type="hidden" name="idpregunta" value="@ViewBag.pregunta.idpregunta">
             <div class="lineres">
-                <button type="radio" value="@ViewBag.respuesta[0].idrespuesta" class="res" name="idrespuesta" id="res1">@ViewBag.respuesta[0].contenido</button>
-                <button type="radio" value="@ViewBag.respuesta[1].idrespuesta" class="res" name="idrespuesta" id="res2">@ViewBag.respuesta[1].contenido</button>
+                <button type="radio" value="@ViewBag.respuesta[0].opcion" class="res" name="idrespuesta" id="res1">@ViewBag.respuesta[0].contenido</button>
+                <button type="radio" value="@ViewBag.respuesta[1].opcion" class="res" name="idrespuesta" id="res2">@ViewBag.respuesta[1].contenido</button>
 
             </div>
             <div class="lineres">
-                <button type="radio" value="@ViewBag.respuesta[2].idrespuesta" class="res" name="idrespuesta" id="res3">@ViewBag.respuesta[2].contenido</button>
-                <button type="radio" value="@ViewBag.respuesta[3].idrespuesta" class="res" name="idrespuesta" id="res4">@ViewBag.respuesta[3].contenido</button>
+                <button type="radio" value="@ViewBag.respuesta[2].opcion" class="res" name="idrespuesta" id="res3">@ViewBag.respuesta[2].contenido</button>
+                <button type="radio" value="@ViewBag.respuesta[3].opcion" class="res" name="idrespuesta" id="res4">@ViewBag.respuesta[3].contenido</button>
             </div>
         </form>
     </div>

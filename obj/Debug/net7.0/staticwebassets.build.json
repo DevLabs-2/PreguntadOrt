@@ -175,7 +175,7 @@
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\DevLabs 2 ORG\\PreguntadOrt\\wwwroot\\",
       "BasePath": "_content/Preguntados",
-      "RelativePath": "imgs/cruz.png",
+      "RelativePath": "/imgs/cruz.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",

@@ -7,7 +7,7 @@
     <title>PreguntadOrt - Configuración</title>
 </head>
 <body class="config">
-    <a href='@Url.Action("Index")'><img src="imgs/cruz.png" alt="salir" class="tlicon"></a>
+    <a href='@Url.Action("Index")'><img src="//imgs/cruz.png" alt="salir" class="tlicon"></a>
     <container class="flexcolumn">
         <form action='@Url.Action("Comenzar")' class="form_sparound">
         <div class="container">
@@ -40,7 +40,7 @@
         <div class="container">
             <h1 class="subtitle">Dificultad</h1>
             <div class="line">
-                <input type="radio" name="dificultad" id="Facil" value="1">
+                <input type="radio" name="dificultad" id="Facil" value="1" required>
                 <label for="Facil">Facil</label>
                 <input type="radio" name="dificultad" id="Medio" value="2">
                 <label for="Medio">Medio</label>
